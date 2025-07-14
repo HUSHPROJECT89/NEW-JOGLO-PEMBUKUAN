@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran - New Joglo Banteran</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/pembayaran.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>New Joglo Banteran</h1>
+        <nav>
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='menu.html'">Menu</button>
+            <button onclick="location.href='pendapatan.html'">Pendapatan</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Pembayaran</h2>
+        <div>
+            <label for="menuItem">Menu Item:</label>
+            <input type="text" id="menuItem" placeholder="Search for menu item...">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button id="addItem">Add Item</button>
+        </div>
+        <div id="orderSummary">
+            <h3>Order Summary</h3>
+            <ul id="itemList"></ul>
+            <p>Total: <span id="totalPrice">0</span></p>
+        </div>
+        <div>
+            <label for="amountGiven">Amount Given:</label>
+            <input type="number" id="amountGiven" placeholder="Enter amount given">
+            <p>Change: <span id="changeAmount">0</span></p>
+            <button id="processPayment">Process Payment</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 New Joglo Banteran</p>
+    </footer>
+</body>
+</html>
